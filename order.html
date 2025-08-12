@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Place Order | Trelawney Pathfinder Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">Trelawney Pathfinder</a>
+      <ul class="nav-links">
+        <li><a href="uniforms.html">Uniforms</a></li>
+        <li><a href="order.html" class="active">Order</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container order-main">
+    <h1>Place Your Uniform Order</h1>
+
+    <div class="order-form">
+      <label for="parentName">Parent's Name</label>
+      <input id="parentName" type="text" required />
+
+      <label for="childName">Child's Name</label>
+      <input id="childName" type="text" required />
+
+      <label for="contact">Contact Number</label>
+      <input id="contact" type="text" required />
+
+      <section class="order-items">
+
+        <div class="item" data-name="Pathfinder World Badge" data-price="40">
+          <img src="WorldB.jpg" alt="World Badge" />
+          <span>World Badge — R40</span>
+          <input class="qty" type="number" min="0" value="0" />
+        </div>
+
+        <div class="item" data-name="Pathfinder Triangle Badge" data-price="40">
+          <img src="TriangleB.jpg" alt="Triangle Badge" />
+          <span>Triangle Badge — R40</span>
+          <input class="qty" type="number" min="0" value="0" />
+        </div>
+
+        <div class="item" data-name="Pathfinder Epaulettes" data-price="40">
+          <img src="epaulettes.jpeg" alt="Epaulettes" />
+          <span>Yellow Epaulettes — R40</span>
+          <input class="qty" type="number" min="0" value="0" />
+        </div>
+
+        <div class="item" data-name="Pathfinder Scarf" data-price="90">
+          <img src="Scarf.jpg" alt="Scarf" />
+          <span>Pathfinder Scarf — R90</span>
+          <input class="qty" type="number" min="0" value="0" />
+        </div>
+
+        <div class="item" data-name="Pathfinder Woogle" data-price="40">
+          <img src="Woogle.jpg" alt="Woogle" />
+          <span>Pathfinder Woogle — R40</span>
+          <input class="qty" type="number" min="0" value="0" />
+        </div>
+
+        <div class="item" data-name="Trelawney Name Flash" data-price="30">
+          <img src="trelawney.jpeg" alt="Trelawney Name Flash" />
+          <span>Trelawney Name Flash — R30</span>
+          <input class="qty" type="number" min="0" value="0" />
+        </div>
+
+        <div class="item" data-name="KNFC" data-price="60">
+          <img src="knfc.jpeg" alt="KNFC Badge" />
+          <span>KNFC Badge — R60</span>
+          <input class="qty" type="number" min="0" value="0" />
+        </div>
+
+        <div class="item" data-name="White Pilot Shirt" data-price="180">
+          <img src="Pilot Shirt.PNG" alt="White Pilot Shirt" />
+          <span>White Pilot Shirt — R180</span>
+          <select class="size">
+            <option value="">Size</option>
+            <option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option><option>XXXL</option>
+          </select>
+          <input class="qty" type="number" min="0" value="0" />
+        </div>
+
+        <div class="item" data-name="Pathfinder Red Golf Shirt" data-price="140">
+          <img src="images/skirt.jpg" alt="Red Golf Shirt" />
+          <span>Red Golf Shirt — R140</span>
+          <select class="size">
+            <option value="">Size</option>
+            <option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option><option>XXXL</option>
+          </select>
+          <input class="qty" type="number" min="0" value="0" />
+        </div>
+
+      </section>
+
+      <p class="total-price">Total: R<span id="total">0.00</span></p>
+
+      <button id="openForm" class="btn-primary">Review & Open Order Form</button>
+    </div>
+
+    <a href="index.html" class="btn-secondary back-link">← Back to Home</a>
+  </main>
+
+  <footer class="footer container">
+    <p>&copy; 2025 Trelawney Pathfinder Club. All rights reserved.</p>
+  </footer>
+
+  <script src="order.js"></script>
+</body>
+</html>
+
